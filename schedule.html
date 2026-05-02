@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SportStream-Home</title>
+</head>
+<body>
+
+<header class="navbar">
+  <h1>SportStream</h1>
+  <div class="logo">&#9889; SportStream</div>
+  <nav>
+  <div class="nav-links">
+    <a href="home.html">Home</a>
+    <a href="live-streams.html">Live Streams</a>
+	<a href="schedule.html">Schedule</a>
+    <a href="pricing.html">Pricing</a>
+    <button type="button" class="search-btn">
+  Search&#128270; 
+</button>
+	<a href="feedback.html">Feedback</a>
+    <a href="login.html">Login</a>
+  </div>
+</nav>
+</header>
+
+<!-- UPCOMING SCHEDULE -->
+<section class="section">
+  <header class="section-header">
+    <h2 class="section-title">Upcoming Schedule</h2>
+    <a href="#">Full calendar &#8594;</a>
+  </header>
+  <figure class="schedule-wrapper">
+    <table class="schedule-table">
+      <thead>
+        <tr>
+		  <th>Date</th>
+          <th>Time</th>
+          <th>Match</th>
+          <th>Sport</th>
+          <th>League</th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+		  <td class="sched-date">20/05/2026</td>
+          <td class="sched-time">21:00PM</td>
+          <td class="sched-teams">PSG vs Dortmund</td>
+          <td><span class="sched-sport">&#9917; Football</span></td>
+          <td class="sched-league">UEFA Europa League Final</td>
+          <td><button class="sched-remind" onclick="toggleRemind(this)">&#128276; Remind me</button></td>
+        </tr>
+        <tr>
+		  <td class="sched-date">21/05/2026</td>
+          <td class="sched-time">11:30AM</td>
+          <td class="sched-teams">Alexander vs Lorenzo</td>
+          <td><span class="sched-sport">&#127934; Tennis</span></td>
+          <td class="sched-league">ATP 500 Hamburg Open</td>
+          <td><button class="sched-remind" onclick="toggleRemind(this)">&#128276; Remind me</button></td>
+        </tr>
+        <tr>
+		  <td class="sched-date">22/05/2026</td>
+          <td class="sched-time">20:00PM</td>
+          <td class="sched-teams">Lens vs Nice</td>
+          <td><span class="sched-sport">&#9917; Football</span></td>
+          <td class="sched-league">Coupe de France Final</td>
+          <td><button class="sched-remind" onclick="toggleRemind(this)">&#128276; Remind me</button></td>
+        </tr>
+        <tr>
+		  <td class="sched-date">23/05/2026</td>
+          <td class="sched-time">21:45</td>
+          <td class="sched-teams">Oleksandr vs Verhoeven</td>
+          <td><span class="sched-sport">&#129354; Boxing</span></td>
+          <td class="sched-league">Glory of Giza</td>
+          <td><button class="sched-remind" onclick="toggleRemind(this)">&#128276; Remind me</button></td>
+        </tr>
+		<tr>
+          <td class="sched-date">24/05/2026</td>		
+          <td class="sched-time">19:00PM</td>
+          <td class="sched-teams">Rangers vs Angels</td>
+          <td><span class="sched-sport">&#9918; MLB</span></td>
+          <td class="sched-league">Sunday Night Baseball</td>
+          <td><button class="sched-remind" onclick="toggleRemind(this)">&#128276; Remind me</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </figure>
+</section>
+
+<!-- CTA BANNER -->
+<section class="section">
+  <aside class="cta-banner">
+    <span class="cta-icon">&#128197;</span>
+    <article class="cta-text">
+      <h3>Never miss a match!</h3>
+      <p>Stay up to date with live streams, schedules, and instant notifications for your favorite teams.</p>
+    </article>
+   <a href="login.html" class="btn-cta">Get Started &#8594;</a>
+  </aside>
+</section>
+
+<footer class="section">
+    <div class="container">
+        <div class="row">
+
+            <!-- Brand column -->
+            <div class="col-4 col-md-6 col-sm-12">
+                <div class="content">
+                    <span class="logo">
+                    <i class='bx bx-movie-play bx-tada main-color'></i>&#9889;Sport<span class="main-color">Stream</span>
+                    </span>
+                    <p>
+                        Your very favorite sports streaming. Stream matches and never miss a game.
+                    </p>
+                    <div class="social-list">
+                        <a href="https://web.facebook.com/SportStream" class="social-item">
+                            <i class="bx bxl-facebook"></i>
+                        </a>
+                        <a href="https://x.com/SportStream" class="social-item">
+                            <i class="bx bxl-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/SportStream/" class="social-item">
+                            <i class="bx bxl-instagram"></i>
+                        </a>
+                        <a href="#" class="social-item">
+                            <i class="bx bxl-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Links columns -->
+            <div class="col-8 col-md-6 col-sm-12">
+                <div class="row">
+
+                    <!-- Quick Links -->
+                    <div class="col-6 col-sm-6">
+                        <div class="content">
+                            <p><b>Quick Links</b></p>
+                            <ul class="footer-menu">
+                                <li><a href="home.html">Home</a></li>
+                                <li><a href="live-streams.html">Live Streams</a></li>
+                                <li><a href="schedule.html">Schedule</a></li>
+                                <li><a href="pricing.html">Pricing</a></li>
+                                <li><a href="feedback.html">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Support -->
+                    <div class="col-6 col-sm-6">
+                        <div class="content">
+                            <p><b>Support</b></p>
+                            <ul class="footer-menu">
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="feedback.html">Help Center</a></li>
+                                <li><a href="feedback.html">Report Issue</a></li>
+                                <li><a href="#">Device Support</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom bar -->
+        <div class="footer-bottom">
+            <p>©2026 SportStream. All rights reserved.</p>
+            <ul class="footer-legal">
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Cookie Policy</a></li>
+                <li><a href="https://www.instagram.com/SportStream/">About Us</a></li>
+            </ul>
+        </div>
+
+    </div>
+</footer>
+</body>
+</html>
