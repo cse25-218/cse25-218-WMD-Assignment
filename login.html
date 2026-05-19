@@ -3,31 +3,34 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SportStream – Login</title>
- <link rel="stylesheet" href="style.css"/>
+  <title>SportStream — Login</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
   <!-- NAVBAR -->
   <header class="navbar">
     <a href="home.html" class="logo"><span class="bolt">&#9889;</span>SportStream</a>
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="live-streams.html" class="live-link"><span class="live-dot"></span>Live Streams</a>
-      <a href="schedule.html">Schedule</a>
-      <a href="pricing.html">Pricing</a>
-      <a href="search.html" class="search-link">Search&#128269;</a>
-      <a href="feedback.html">Feedback</a>
-      <a href="login.html" class="active">Login</a>
+    <nav>
+      <div class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="live-streams.html" class="live-link"><span class="live-dot"></span>Live Streams</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="pricing.html">Pricing</a>
+        <button type="button" class="search-btn">Search<span class="search-dot"></span></button>
+        <a href="feedback.html">Feedback</a>
+        <a href="login.html" class="active">Login</a>
+      </div>
     </nav>
   </header>
 
-  <!-- MAIN CARD -->
+  <!-- LOGIN PAGE -->
   <main class="page">
     <div class="card">
 
       <!-- LEFT: Login Form -->
       <section class="form-panel">
+
         <h1 class="form-title">Login</h1>
 
         <div class="field">
@@ -48,11 +51,12 @@
           <a href="#" class="forgot-link">Forgot password?</a>
         </div>
 
-        <button type="submit" class="btn-login">Login</button>
+        <button type="button" class="btn-login" onclick="handleLogin()">Login</button>
 
         <p class="signup-text">
-          Don't have account?<a href="#" class="signup-link">Sign up</a>
+          Don't have account? <a href="#" class="signup-link">Sign up</a>
         </p>
+
       </section>
 
       <!-- RIGHT: Promo Panel -->
@@ -69,6 +73,18 @@
 
     </div>
   </main>
+
+  <script>
+    function handleLogin() {
+      const email = document.getElementById('email').value.trim();
+      const pass  = document.getElementById('password').value;
+      if (!email || !pass) {
+        alert('Please enter your email and password.');
+        return;
+      }
+      window.location.href = 'home.html';
+    }
+  </script>
 
 </body>
 </html>
