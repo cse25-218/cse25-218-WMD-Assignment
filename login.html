@@ -8,7 +8,6 @@
 </head>
 <body>
 
-  <!-- NAVBAR -->
   <header class="navbar">
     <a href="home.html" class="logo"><span class="bolt">&#9889;</span>SportStream</a>
     <nav>
@@ -24,11 +23,9 @@
     </nav>
   </header>
 
-  <!-- LOGIN PAGE -->
   <main class="page">
     <div class="card">
 
-      <!-- LEFT: Login Form -->
       <section class="form-panel">
 
         <h1 class="form-title">Login</h1>
@@ -59,7 +56,6 @@
 
       </section>
 
-      <!-- RIGHT: Promo Panel -->
       <section class="promo-panel">
         <img
           src="https://tse1.mm.bing.net/th/id/OIP.Px5GhrCM-t0ajVLjjrBvJAHaEK?w=1920&h=1080&rs=1&pid=ImgDetMain&o=7&rm=3"
@@ -73,18 +69,7 @@
 
     </div>
   </main>
-
-  <script>
-    function handleLogin() {
-      const email = document.getElementById('email').value.trim();
-      const pass  = document.getElementById('password').value;
-      if (!email || !pass) {
-        alert('Please enter your email and password.');
-        return;
-      }
-      window.location.href = 'home.html';
-    }
-  </script>
-
+  
+<script src="script.js"></script>
 </body>
 </html>
