@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SportStream — Live Streams</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+ <header class="navbar">
+    <a href="index.html" class="logo"><span class="bolt">&#9889;</span>SportStream</a>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="live-streams.html" class="live-link"><span class="live-dot"></span>Live Streams</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="pricing.html">Pricing</a>
+      <button type="button" class="search-btn">Search&#128269;</button>
+      <a href="feedback.html">Feedback</a>
+      <a href="login.html">Login</a>
+    </nav>
+</header>
+
+  <!-- MAIN -->
+ <main class="streams-page">
+
+    <!-- FILTER BAR -->
+    <nav class="streams-filterbar" aria-label="Stream filters">
+      <h1 class="streams-page-title">Live Streams</h1>
+
+      <div class="streams-filters">
+        <!-- Sport filter -->
+        <label class="filter-label" for="sport-filter">
+          <select class="filter-select" id="sport-filter" aria-label="Filter by sport">
+            <option value="">All Sports</option>
+            <option value="football">Football</option>
+            <option value="basketball">Basketball</option>
+            <option value="tennis">Tennis</option>
+            <option value="boxing">Boxing</option>
+          </select>
+          <span class="filter-chevron" aria-hidden="true">&#8964;</span>
+        </label>
+
+        <!-- League filter -->
+        <label class="filter-label" for="league-filter">
+          <select class="filter-select" id="league-filter" aria-label="Filter by league">
+            <option value="">All Leagues</option>
+            <option value="epl">Premier League</option>
+            <option value="laliga">La Liga</option>
+            <option value="nba">NBA</option>
+          </select>
+          <span class="filter-chevron" aria-hidden="true">&#8964;</span>
+        </label>
+
+        <!-- Status toggle -->
+        <label class="filter-label" for="status-filter">
+          <select class="filter-select" id="status-filter" aria-label="Filter by status">
+            <option value="live">Live</option>
+            <option value="upcoming">Upcoming</option>
+            <option value="replay">Replay</option>
+          </select>
+          <span class="filter-chevron" aria-hidden="true">&#8964;</span>
+        </label>
+      </div>
+    </nav>
+
+    <!-- STREAMS LIST -->
+    <section class="streams-list" aria-label="Live streams">
+
+      <!-- Stream row 1 -->
+      <article class="stream-row">
+        <figure class="stream-thumb">
+          <img
+            src="https://talksport.com/wp-content/uploads/sites/5/2024/03/GETTY_Manchester-City-v-Arsenal-FC-Premier-League_SPO_GYI2121048977jpg-JS890840833.jpg"
+            alt="Manchester City vs Arsenal — Premier League"
+            width="300" height="170"
+          />
+          <figcaption class="sr-only">Manchester City vs Arsenal match thumbnail</figcaption>
+        </figure>
+        <div class="stream-info">
+          <h2 class="stream-teams">Manchester City vs Arsenal</h2>
+          <p class="stream-league">Premier League</p>
+        </div>
+        <aside class="stream-meta" aria-label="Stream status">
+          <output class="stream-live-badge" aria-label="Currently live">LIVE</output>
+        </aside>
+        <button class="btn-watch" onclick="playMatch('city.mp4')">Watch now</button>
+      </article>
+
+      <!-- Stream row 2 -->
+      <article class="stream-row">
+        <figure class="stream-thumb">
+          <img
+            src="https://images.gmanews.tv/webpics/2026/03/2026-03-17T020224Z_1106949953_MT1USATODAY28518084_RTRMADP_3_NBA-LOS-ANGELES-LAKERS-AT-HOUSTON-ROCKETS_2026_03_17_12_24_47.JPG"
+            alt="Lakers vs Rockets — NBA"
+            width="300" height="170"
+          />
+          <figcaption class="sr-only">Lakers vs Rockets match thumbnail</figcaption>
+        </figure>
+        <div class="stream-info">
+          <h2 class="stream-teams">Lakers vs Rockets</h2>
+          <p class="stream-league">NBA</p>
+        </div>
+        <aside class="stream-meta" aria-label="Stream status">
+          <output class="stream-live-badge" aria-label="Currently live">LIVE</output>
+        </aside>
+        <button class="btn-watch" onclick="playMatch('lakers')">Watch now</button>
+      </article>
+
+      <!-- Stream row 3 -->
+      <article class="stream-row">
+        <figure class="stream-thumb">
+          <img
+            src="https://i.ytimg.com/vi/9aR6r5jMe1M/maxresdefault.jpg"
+            alt="Jan-Lennard Struff vs Alex Michelsen — Tennis"
+            width="300" height="170"
+          />
+          <figcaption class="sr-only">Tennis match thumbnail</figcaption>
+        </figure>
+        <div class="stream-info">
+          <h2 class="stream-teams">Jan-Lennard Struff vs Alex Michelsen</h2>
+          <p class="stream-league">Tennis</p>
+        </div>
+        <aside class="stream-meta" aria-label="Stream status">
+          <output class="stream-live-badge" aria-label="Currently live">LIVE</output>
+        </aside>
+        <button class="btn-watch" onclick="playMatch('tennis')">Watch now</button>
+      </article>
+
+      <!-- Stream row 4 -->
+      <article class="stream-row">
+        <figure class="stream-thumb">
+          <img
+            src="https://tse1.mm.bing.net/th/id/OIP.VSVeDw6V8b73LroBqNZ2LgHaE8?cb=thfc1falcon&w=4000&h=2667&rs=1&pid=ImgDetMain&o=7&rm=3"
+            alt="Alaves vs Mallorca — LaLiga"
+            width="300" height="170"
+          />
+          <figcaption class="sr-only">Alaves vs Mallorca match thumbnail</figcaption>
+        </figure>
+        <div class="stream-info">
+          <h2 class="stream-teams">Alaves vs Mallorca</h2>
+          <p class="stream-league">LaLiga</p>
+        </div>
+        <aside class="stream-meta" aria-label="Stream status">
+          <output class="stream-live-badge" aria-label="Currently live">LIVE</output>
+        </aside>
+        <button class="btn-watch" onclick="playMatch('alaves')">Watch now</button>
+      </article>
+
+      <!-- Stream row 5 -->
+      <article class="stream-row">
+        <figure class="stream-thumb">
+          <img
+            src="https://th.bing.com/th/id/R.4ecfd4ae4a869744384f631cf0d48064?rik=8CR1aDQLKYYQnQ&pid=ImgRaw&r=0"
+            alt="Vergil Ortiz Jr. vs Samuel Vargas — Boxing"
+            width="300" height="170"
+          />
+          <figcaption class="sr-only">Boxing match thumbnail</figcaption>
+        </figure>
+        <div class="stream-info">
+          <h2 class="stream-teams">Vergil Ortiz Jr. vs Samuel Vargas</h2>
+          <p class="stream-league">Boxing</p>
+        </div>
+        <aside class="stream-meta" aria-label="Stream status">
+          <output class="stream-live-badge" aria-label="Currently live">LIVE</output>
+        </aside>
+        <button class="btn-watch" onclick="playMatch('boxing')">Watch now</button>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <div class="footer-logo"><em class="bolt" aria-hidden="true">&#9889;</em>SportStream</div>
+        <p>Your very favorite sports streaming. Stream matches and never miss a game.</p>
+        <nav aria-label="Social media links">
+          <ul class="social-list">
+            <li><a href="https://web.facebook.com/" target="_blank" rel="noopener noreferrer" class="social-item fb" aria-label="Facebook">f</a></li>
+            <li><a href="https://x.com/" target="_blank" rel="noopener noreferrer" class="social-item x" aria-label="X (Twitter)">X</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" class="social-item ig" aria-label="Instagram">&#9711;</a></li>
+            <li><a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="social-item yt" aria-label="YouTube">&#9654;</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <nav aria-label="Quick links" class="footer-col">
+        <p class="col-title">Quick Links</p>
+        <ul class="footer-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="live-streams.html">Live Streams</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="feedback.html">Contact Us</a></li>
+        </ul>
+      </nav>
+
+      <nav aria-label="Support links" class="footer-col">
+        <p class="col-title">Support</p>
+        <ul class="footer-menu">
+          <li><a href="#">Support</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="feedback.html">Help Center</a></li>
+          <li><a href="feedback.html">Report Issue</a></li>
+          <li><a href="#">Device Support</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+    <div class="footer-bottom">
+      <small>@2026SportStream. All rights reserved.</small>
+      <nav aria-label="Legal links">
+        <ul class="footer-legal">
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Policy</a></li>
+          <li><a href="#">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
