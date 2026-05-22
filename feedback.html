@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SportStream — Feedback</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="index.html" class="logo"><span class="bolt">&#9889;</span>SportStream</a>
+    <nav>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="live-streams.html" class="live-link"><span class="live-dot"></span>Live Streams</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="pricing.html">Pricing</a>
+        <button type="button" class="search-btn">Search&#128269;</button>
+        <a href="feedback.html" class="active">Feedback</a>
+        <a href="login.html">Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="feedback-page">
+
+    <h1 class="feedback-title">We'd love your feedback</h1>
+    <p class="feedback-sub">
+      Tell us, share your thoughts or ask questions.<br>
+      Send a message.
+    </p>
+
+    <div class="feedback-layout">
+
+      <div class="feedback-form-box">
+        <h3 class="feedback-form-title">Send Us a Message</h3>
+
+        <div class="fb-field">
+          <label for="fbName">Name</label>
+          <input type="text" id="fbName" placeholder="" />
+        </div>
+
+        <div class="fb-field">
+          <label for="fbEmail">Email</label>
+          <input type="email" id="fbEmail" placeholder="" />
+        </div>
+
+        <div class="fb-field">
+          <label for="fbMsg">Message</label>
+          <textarea id="fbMsg" rows="6"></textarea>
+        </div>
+
+        <button class="btn-send" onclick="sendFeedback()">Send message</button>
+        <p class="fb-toast" id="fbToast">&#10003; Message sent! We'll get back to you soon.</p>
+      </div>
+
+      <div class="feedback-info-box">
+        <h3 class="info-title">Other ways to reach us</h3>
+
+        <ul class="contact-list">
+          <li>
+            <span class="ci-icon">&#9993;</span>
+            <div>
+              <strong>Email</strong>
+              <span>sportstream@gmail.com</span>
+            </div>
+          </li>
+          <li>
+            <span class="ci-icon">&#128222;</span>
+            <div>
+              <strong>Phone</strong>
+              <span>+267 3930133</span>
+            </div>
+          </li>
+          <li>
+            <span class="ci-icon">&#128205;</span>
+            <div>
+              <strong>Address</strong>
+              <span>123, Fairgrounds Gaborone</span>
+            </div>
+          </li>
+        </ul>
+
+        <h4 class="follow-title">Follow Us</h4>
+        <div class="social-list">
+          <a href="https://web.facebook.com/" target="_blank" class="social-item fb">f</a>
+          <a href="https://x.com/" target="_blank" class="social-item x">&#120143;</a>
+          <a href="https://www.instagram.com/" target="_blank" class="social-item ig">&#9711;</a>
+          <a href="https://youtube.com" target="_blank" class="social-item yt">&#9654;</a>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer class="feedback-footer">
+    <div class="footer-bottom">
+      <span>&copy;2026 SportStream. All rights reserved.</span>
+      <ul class="footer-legal">
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Cookie Policy</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
