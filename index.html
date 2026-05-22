@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SportStream - Home</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  
+  <header class="navbar">
+    <a href="home.html" class="logo"><span class="bolt">&#9889;</span>SportStream</a>
+    <nav>
+      <div class="nav-links">
+        <a href="home.html" class="active">Home</a>
+        <a href="live-streams.html" class="live-link"><span class="live-dot"></span>Live Streams</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="pricing.html">Pricing</a>
+        <button type="button" class="search-btn">Search&#128269;</button>
+        <a href="feedback.html">Feedback</a>
+        <a href="login.html">Login</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Your Home for<br><em>live Sports</em></h1>
+        <p>Watch sports, upcoming events, live, with your favorite teams, anytime, anywhere.</p>
+        <div class="hero-btns">
+          <a href="live-streams.html" class="btn-dark">Watch Live</a>
+          <a href="pricing.html" class="btn-dark">View plans</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="https://static0.givemesportimages.com/wordpress/wp-content/uploads/2025/01/epl_most-famous-athletes.jpg" alt="Sports players" />
+      </div>
+    </section>
+
+    <section class="popular">
+      <div class="section-header">
+        <h2>Popular Live Now</h2>
+        <a href="live-streams.html" class="see-more">See more &gt;</a>
+      </div>
+
+      <div class="cards-grid">
+
+        <div class="card">
+          <div class="card-thumb">
+            <img src="data:image/jpeg;base64,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" alt="Bayern vs Madrid" />
+            <button class="watch-btn" onclick="goToLiveStreams('bayern')">
+              Watch now &#9658;
+            </button>
+          </div>
+          <div class="card-info">
+            <div class="card-title">Bayern vs Madrid</div>
+            <div class="card-sport">Football</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-thumb">
+            <img src="https://i.ytimg.com/vi/9aR6r5jMe1M/maxresdefault.jpg" alt="Tennis" />
+            <button class="watch-btn" onclick="goToLiveStreams('tennis')">
+              Watch now &#9658;
+            </button>
+          </div>
+          <div class="card-info">
+            <div class="card-title">Jan-Lennard Struff vs Alex Michelsen</div>
+            <div class="card-sport">Tennis</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-thumb">
+            <img src="https://images.gmanews.tv/webpics/2026/03/2026-03-17T020224Z_1106949953_MT1USATODAY28518084_RTRMADP_3_NBA-LOS-ANGELES-LAKERS-AT-HOUSTON-ROCKETS_2026_03_17_12_24_47.JPG" alt="Lakers vs Rockets" />
+            <button class="watch-btn" onclick="goToLiveStreams('lakers')">
+              Watch now &#9658;
+            </button>
+          </div>
+          <div class="card-info">
+            <div class="card-title">Lakers vs Rockets</div>
+            <div class="card-sport">NBA</div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-thumb">
+            <img src="https://th.bing.com/th/id/R.4ecfd4ae4a869744384f631cf0d48064?rik=8CR1aDQLKYYQnQ&pid=ImgRaw&r=0" alt="Boxing" />
+            <button class="watch-btn" onclick="goToLiveStreams('boxing')">
+              Watch now &#9658;
+            </button>
+          </div>
+          <div class="card-info">
+            <div class="card-title">Vergil ortiz Jr. vs Samuel Vargas</div>
+            <div class="card-sport">Boxing</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="cta-banner">
+      <span class="cta-icon">&#128197;</span>
+      <div class="cta-text">
+        <strong>Never miss a match!</strong>
+        <span>Stay up to date with live streams and schedules.</span>
+      </div>
+      <a href="login.html" class="btn-cta">Get Started &nbsp;&rarr;</a>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <div class="footer-logo"><span class="bolt">&#9889;</span>SportStream</div>
+        <p>Your very favorite sports streaming. Stream matches and never miss a game.</p>
+        <ul class="social-list">
+          <li><a href="https://web.facebook.com/" target="_blank" rel="noopener" class="social-item fb" aria-label="Facebook">f</a></li>
+          <li><a href="https://x.com/" target="_blank" rel="noopener" class="social-item x" aria-label="X">X</a></li>
+          <li><a href="https://www.instagram.com/" target="_blank" rel="noopener" class="social-item ig" aria-label="Instagram">&#9711;</a></li>
+          <li><a href="https://youtube.com" target="_blank" rel="noopener" class="social-item yt" aria-label="YouTube">&#9654;</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <p class="col-title">Quick Links</p>
+        <ul class="footer-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="live-streams.html">Live Streams</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="pricing.html">Pricing</a></li>
+          <li><a href="feedback.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <p class="col-title">Support</p>
+        <ul class="footer-menu">
+          <li><a href="#">Support</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="feedback.html">Help Center</a></li>
+          <li><a href="feedback.html">Report Issue</a></li>
+          <li><a href="#">Device Support</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <span>&copy;2026 SportStream. All rights reserved.</span>
+      <ul class="footer-legal">
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Cookie Policy</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
